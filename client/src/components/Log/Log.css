@@ -1,0 +1,177 @@
+/* Pages/ Home */
+#log-presentation {
+    position: relative;
+    color: white;
+    height: 300px;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+#main-log div img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.log-box {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    opacity: 0.4;
+}
+
+#main-log h1 {
+    background-color: transparent;
+    width: 80%;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Components/ Log / index */
+#form-container {
+    display: flex;
+    flex-direction: column-reverse;
+    /* width: 90%; */
+}
+
+.form-home-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 50px 0;
+}
+
+.link:hover {
+    color: rgb(66, 66, 253);
+}
+
+.form-home-link p {
+    color: black;
+    margin: 0;
+    border-radius: 0;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Components/ Log / SignIn & SignUp  */
+.login {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h2 {
+    margin: 20px 0 10px 0;
+}
+
+.login-borderBottom {
+    border-top: 1px solid rgb(10, 10, 10, 0.4);
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.login form input {
+    outline: none;
+    border: none;
+    height: 50px;
+    /* width: 70%; */
+    padding: 0 10px;
+    background-color: rgb(232, 240, 254);
+}
+
+.container-inputPassword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    /* width: 100%; */
+    background-color: rgb(232, 240, 254);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.container-inputPassword input {
+    outline: none;
+    border: none;
+    padding: 0;
+    background: none;
+    margin: 0;
+    width: 255px;
+}
+
+.eye {
+    color: rgb(150, 150, 150);
+}
+
+.login h4 {
+    color: green;
+    font-size: 1.3em;
+}
+
+.confirmPassword {
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: red;
+}
+
+/* Components/ Log / ResetPassword */
+.resetPassword-borderBottom {
+    height: 30px;
+}
+
+@media screen and (min-width:1367px) {
+
+    /* Pages / Home */
+    #main-log {
+        display: flex;
+        flex-direction: row;
+        height: 80vh;
+        margin: 0 10px;
+    }
+
+    #log-presentation {
+        width: 75%;
+        height: 715px;
+        margin-right: 10px;
+    }
+
+    #main-log div img {
+        height: 715px;
+    }
+
+    .log-box {
+        height: 715px;
+    }
+
+    /* Components / Log / index */
+    #form-container {
+        margin: 10px;
+        width: 35%;
+        justify-content: center;
+        align-items: center;
+        height: 715px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px 5px rgb(0, 0, 0, 0.3);
+    }
+
+    .login {
+        height: 500px;
+    }
+
+
+    #email,
+    .container-inputPassword,
+    #username {
+        width: 250px;
+    }
+
+
+}

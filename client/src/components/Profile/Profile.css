@@ -1,0 +1,200 @@
+/* Components / Profil / ProfilUser */
+#article-account-name-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#article-account-name-img h1 {
+    margin: 0 0 10px 0;
+}
+
+.container-account-description {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.account-description p {
+    width: 300px;
+    height: 150px;
+    border: 2px solid rgb(192, 192, 192, 0.3);
+    border-radius: 10px;
+    margin: 0;
+    padding: 5px;
+    font-size: 1.1em;
+}
+
+.description {
+    width: 300px;
+    height: 150px;
+    font-size: 1.1em;
+    padding: 5px;
+    border: 1px solid rgb(179, 177, 177, 0.7);
+}
+
+.buttonSend-description {
+    width: 180px;
+    margin-bottom: 0;
+}
+
+.text-deleteAccount {
+    margin-top: 20px;
+    color: rgb(51, 51, 255);
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+
+
+.button-popupDelete {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-popupDelete button {
+    width: 120px;
+    height: 40px;
+}
+
+/* Components / Profil / UpdateImg */
+.form-updatePicture {
+    height: 290px;
+}
+
+.container-userProfile-picture {
+    margin-top: 20px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-account-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 0.5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.container-account-picture img {
+    width: 200px;
+    height: 200px;
+}
+
+.container-pictureUser {
+    width: 180px;
+    height: 0px;
+    border-radius: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 6em;
+    font-weight: bold;
+    background-color: rgb(100, 149, 253);
+    color: white
+}
+
+.buttonChoice-picture {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 80px;
+}
+
+.buttonChoice-picture i {
+    background-color: rgb(229, 226, 226);
+    color: black;
+    font-size: 1em;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Components / Profil / ChangePassword */
+
+#changePassword {
+    width: 80%;
+    margin: auto;
+    justify-content: space-around;
+}
+
+#changePassword h1 {
+    text-align: center;
+}
+
+#changePassword h1 br {
+    display: none;
+}
+
+#changePassword div {
+    margin-bottom: 20px;
+}
+
+#changePassword button {
+    width: 280px;
+}
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+
+    /* Components / Profil / ProfilUser */
+    #article-account-name-img h1 {
+        font-size: 1.4em;
+    }
+
+    .account-description {
+        height: 300px;
+    }
+
+    .account-description p {
+        width: 400px;
+        height: 250px;
+        border: 3px solid rgb(192, 192, 192, 0.3);
+        padding: 8px;
+        font-size: 1.3em;
+    }
+
+    .description {
+        width: 400px;
+        height: 250px;
+        font-size: 1.3em;
+        padding: 8px;
+    }
+
+    .buttonSend-description {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:1367px) {
+
+    /* Components / Profil / ProfilUser */
+    .account-description p {
+        width: 400px;
+        height: 250px;
+    }
+
+    .description {
+        width: 400px;
+        height: 250px;
+        font-size: 1em;
+        padding: 5px;
+    }
+
+}

@@ -1,0 +1,864 @@
+/* Components / Post / allPosts */
+
+.section-title-post {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+    z-index: -1;
+}
+
+.img-title-post {
+    width: 40px;
+    margin-right: 10px;
+}
+
+
+.article-post {
+    width: 90%;
+    margin: 0 0 40px 0;
+    padding: 10px 10px 0 10px;
+    background-color: white;
+    box-shadow: -15px -15px 15px rgb(255, 255, 255, 0.4),
+        15px 15px 15px rgb(0, 0, 0, 0.3);
+}
+
+
+
+.article-post i {
+    font-size: 0.8em;
+}
+
+.fa-spinner {
+    color: rgba(255, 0, 0, 0.726);
+    font-size: 1.5em;
+}
+
+.header-post {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+
+.header-post-user {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pictureUser-post {
+    width: 80px;
+    height: 80px;
+}
+
+.container-editDelete-post .fa-image {
+    font-size: 0.9em;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.container-editDelete-post .fa-arrow-alt-circle-down {
+    color: green;
+    margin-right: 5px;
+}
+
+.container-editDelete-post {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1em;
+    margin-bottom: 40px;
+    /* width: 50%; */
+}
+
+.fa-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 2px;
+}
+
+.container-datePost {
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: rgb(143, 143, 143);
+    margin: 0;
+}
+
+.text-post {
+    overflow-wrap: break-word;
+}
+
+
+
+.img-post {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.video iframe {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.close-btn-video {
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    right: 35px;
+    top: 45%;
+}
+
+.close-btn-video i {
+    font-size: 1em;
+}
+
+
+.container-commentLike {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.block-comments {
+    margin: 0 0 0 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.fa-comment {
+    -webkit-text-stroke: 1px rgb(50, 146, 255);
+}
+
+
+.header-popup-edit-post {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+/* Components / Post / DeletePost */
+.fa-trash-alt:hover {
+    color: rgba(255, 0, 0, 0.726);
+}
+
+/* Components / Post / NewPostForm */
+.section-newPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.article-newPost {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(63, 58, 58, 0.3);
+}
+
+/* .article-newPost div {
+    width: 70px;
+    height: 70px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+*/
+
+.picture-newPost {
+    margin-left: 15px;
+    width: 60px;
+    height: 60px;
+
+}
+
+/*  */
+
+.newPublication {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 50px;
+    background-color: rgb(235, 235, 235);
+    padding: 0 20px;
+    font-size: 1em;
+    border-radius: 50px;
+    border: none;
+}
+
+
+
+/* Components / Post / CardComment  */
+
+#article-comment {
+    overflow-y: scroll;
+    max-height: 500px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerComment {
+    margin: 10px 0 5px 10px;
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.containerComment-User {
+    background-color: rgb(236, 235, 235);
+}
+
+.containerComment-client {
+    border: 1px solid rgb(163, 162, 162)
+}
+
+
+.pictureUser-comment {
+    width: 40px;
+    height: 40px;
+}
+
+.userImgName-comment h4 {
+    margin: 0 5px;
+    font-weight: 600;
+}
+
+.text-comment {
+    word-wrap: break-word;
+    margin: 5px 0;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.newComment {
+    margin-top: 10px;
+    display: flex;
+}
+
+.newComment-img-text {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 100%;
+    padding-right: 15px;
+    height: 40px;
+    background-color: rgb(236, 235, 235);
+}
+
+.newComment-img-text textarea {
+    border: none;
+    height: 20px;
+    background-color: inherit;
+}
+
+.newComment-img-text i :hover {
+    color: green;
+}
+
+.newComment-img-text i {
+    font-size: 1.2em;
+    color: rgb(153, 152, 152);
+}
+
+
+.newCommentPopup-img {
+    height: 20px;
+}
+
+.imgComment {
+    width: 280px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.picture-comment {
+    border-radius: 5px;
+    width: 150px;
+    margin-left: 50px;
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.close-commentImg {
+    font-size: 0.8em;
+    position: relative;
+    left: 152px;
+    top: 10px;
+    background-color: rgb(59, 59, 59, 0.65);
+}
+
+.SendComment-button {
+    font-size: 0.6em;
+    background-color: rgb(46, 45, 45);
+    /* width: 100%; */
+}
+
+/* Components / Post / EditDeleteComment  */
+
+.close-editcomment {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(226, 223, 223, 0.6);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    margin: 5px;
+
+}
+
+.editDelete-comment {
+    display: flex;
+    font-size: 0.7em;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    margin-bottom: 5px;
+    width: 95%;
+}
+
+.date-comment {
+    font-size: 0.8em;
+    margin: 0 0 5px 5px;
+    font-style: italic;
+    color: rgb(143, 143, 143);
+}
+
+.button-editDelete-comment {
+    /* border: solid black; */
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.container-EditClose-button {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin: auto;
+    width: 96%;
+
+}
+
+.container-EditClose-button button {
+    width: 45%;
+    height: 30px;
+}
+
+/* .button-EditCloseComment {
+    font-size: 0.6em;
+    width: 90px;
+    height: 30px;
+    margin: 0 0 0 5px;
+} */
+
+
+/* Components / Post / LikeButton  */
+.fa-heart {
+    -webkit-text-stroke: 1px;
+    background: linear-gradient(rgba(255, 0, 0, 0.726), #a78180);
+    background-clip: text;
+    color: transparent;
+}
+
+.heart-like {
+    -webkit-text-stroke: 0px;
+    background: linear-gradient(rgba(255, 0, 0, 0.726), #a78180);
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Components / Post / CarAllPost & newPostForm - popup */
+
+.header-popup-newPost {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-popup-newPost img {
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.textPopup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textPopup textarea {
+    padding: 0;
+    max-height: 150px;
+    border: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.img-post-popup {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    max-height: 350px;
+}
+
+.close-btn-img {
+    position: relative;
+    top: 35px;
+    left: 135px;
+    border-radius: 50%;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(59, 59, 59, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.btn-updatePicture {
+    width: 25px;
+    height: 60px;
+    position: relative;
+    top: 65px;
+    left: 5px;
+}
+
+.btn-updatePicture button {
+    margin-top: 3px;
+    border-radius: 50%;
+    border: 0;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(59, 59, 59, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#containerVideo-Newpost {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#closeVideo-newPost {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(226, 223, 223, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.6em;
+    margin: 5px;
+}
+
+.video-newPost {
+    width: 100%;
+    height: 300px;
+    margin: auto;
+}
+
+.container-newPostPopup-img-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-top: 10px
+}
+
+.newPostPopup-img {
+    border: 1px solid rgb(20, 20, 20, 0.30);
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newPostPopup-img-btn {
+    background-color: white;
+    border: none;
+    font-size: 1em;
+}
+
+.updatePostImg {
+    width: 300px;
+}
+
+.newPostPopup-img p {
+    font-weight: bold;
+}
+
+.newPostPopup-img i {
+    font-size: 1.3em;
+    color: green;
+}
+
+.container-newPostBtnSendCancel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container-newPostBtnSendCancel button {
+    width: 100%;
+    height: 40px;
+    font-weight: 600;
+}
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+
+    /* Components / Post / allPosts */
+    .section-title-post {
+        width: 95%;
+    }
+
+    /* Components / Post / CardAllPosts */
+    .article-post i {
+        font-size: 1em;
+    }
+
+    .fa-spinner {
+        font-size: 1.8em;
+    }
+
+    .header-post-user {
+        width: 30%;
+    }
+
+    .text-post {
+        font-size: 1.5em;
+    }
+
+    .container-editDelete-post .fa-image {
+        font-size: 1em;
+    }
+
+    .video iframe {
+        width: 600px;
+        height: 500px;
+    }
+
+    .close-btn-video {
+        width: 35px;
+        height: 35px;
+        right: 55px;
+        top: 27%;
+    }
+
+    .close-btn-video i {
+        font-size: 1.2em;
+    }
+
+    /* Components / Post / NewPostForm */
+    .article-newPost input {
+        width: 500px;
+        height: 80px;
+        padding: 0 10px;
+        font-size: 1.2em;
+    }
+
+    .article-newPost {
+        justify-content: flex-start;
+    }
+
+    .picture-newPost {
+        margin-right: 10px;
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Components / Post / CardComment  */
+
+    .containerComment-User {
+        width: 70%;
+    }
+
+    .containerComment-client {
+        width: 70%;
+    }
+
+    .pictureUser-comment {
+        width: 50px;
+        height: 50px;
+    }
+
+    .text-comment {
+        font-size: 1.2em;
+    }
+
+    .newComment-img-text {
+        width: 70%;
+        height: 50px;
+    }
+
+    /* #textarea-comment {
+    width: 80%;
+    height: 50px
+} */
+
+    #textarea-comment::placeholder {
+        font-size: 1em;
+    }
+
+    .picture-comment {
+        width: 200px;
+        max-height: 200px;
+    }
+
+    .close-commentImg {
+        font-size: 0.7em;
+        position: relative;
+        left: 200px;
+    }
+
+    .SendComment-button {
+        position: relative;
+        bottom: 85px;
+        left: 30px;
+        font-size: 0.9em;
+        width: 20%;
+        height: 60px;
+    }
+
+    /* Components / Post / EditDeleteComment  */
+    .editDelete-comment {
+        width: 70%;
+    }
+
+    .button-editDelete-comment {
+        width: 30%;
+    }
+
+    .container-EditClose-button {
+        width: 70%;
+    }
+
+    /* Components / Post / CarAllPost & newPostForm - popup */
+    .img-post-popup {
+        max-height: 550px;
+    }
+
+    .close-btn-img {
+        top: 50px;
+        left: 290px;
+        width: 35px;
+        height: 35px;
+    }
+
+
+    .updatePostImg {
+        width: 600px;
+        height: 50px;
+    }
+
+    .textPopup textarea {
+        margin-left: 30px;
+    }
+
+}
+
+@media screen and (min-width:1367px) {
+
+    /* Components / Post / allPosts */
+    .section-title-post {
+        width: 42%;
+        margin-bottom: 20px;
+    }
+
+    /* Components / Post / CardAllPosts */
+    .article-post {
+        width: 40%;
+    }
+
+    .pictureUser-post {
+        margin-right: 10px;
+    }
+
+    .container-imgPost {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-post {
+        width: 95%;
+    }
+
+    /* Components / Post / NewPostForm */
+    .article-newPost {
+        width: 40%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .article-newPost input {
+        width: 500px;
+        height: 70px;
+        font-size: 1.1em;
+        cursor: pointer;
+    }
+
+    .picture-newPost {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+    }
+
+    .container-commentLike {
+        font-size: 1.4em;
+    }
+
+    .video iframe {
+        width: 600px;
+        height: 500px;
+    }
+
+    .close-btn-video {
+        width: 35px;
+        height: 35px;
+        right: 55px;
+        top: 30%;
+
+    }
+
+    .close-btn-video i {
+        font-size: 1.2em;
+    }
+
+
+    /* Components / Post / CardComment  */
+
+    .containerComment {
+        width: 70%;
+    }
+
+    .pictureUser-comment {
+        width: 60px;
+        height: 60px;
+    }
+
+    .newComment-img-text {
+        width: 80%;
+        height: 60px;
+    }
+
+    .picture-comment {
+        width: 220px;
+        max-height: 220px;
+    }
+
+    .close-commentImg {
+        left: 220px;
+    }
+
+    .SendComment-button {
+        font-size: 1em;
+        height: 50px;
+    }
+
+    /* Components / Post / EditDeleteComment  */
+
+    .editDelete-comment {
+        margin-top: 5px;
+        width: 70%;
+    }
+
+    .date-comment {
+        font-size: 1em;
+    }
+
+    .button-editDelete-comment {
+        width: 25%;
+    }
+
+    .container-EditClose-button {
+        width: 98%;
+    }
+
+    .button-EditCloseComment {
+        font-size: 0.8em;
+        width: 120px;
+        height: 50px;
+        margin: 0 0 0 10px;
+    }
+
+    /* Components / Post / CarAllPost & newPostForm - popup */
+    .close-btn-img {
+        left: 270px;
+        top: 45px;
+        width: 35px;
+        height: 35px;
+        font-size: 0.8em;
+    }
+
+    .textPopup {
+        width: 600px;
+    }
+
+    .updatePostImg {
+        width: 1000vw;
+    }
+
+    .btn-updatePicture {
+        top: 10px;
+        left: 35px;
+    }
+
+
+
+
+
+
+}

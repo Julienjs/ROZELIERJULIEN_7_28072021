@@ -1,0 +1,43 @@
+.formSearch {
+    margin: 10px 0 10px 0;
+}
+
+.article-user {
+    border: 1px solid rgb(211, 209, 209);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user img {
+    width: 100px;
+    height: 100px;
+}
+
+.name-info {
+    display: flex;
+    align-items: center;
+}
+
+
+.article-user p {
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.article-user p span {
+    font-style: normal;
+    font-weight: normal;
+}
+
+#deleteUser {
+    margin: 30px auto 0 auto;
+}

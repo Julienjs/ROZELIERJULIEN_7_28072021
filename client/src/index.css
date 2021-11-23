@@ -1,0 +1,161 @@
+/* App */
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+
+
+h2 {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+i {
+    cursor: pointer;
+}
+
+.close {
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+/* App - main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App - section */
+section {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* App - article */
+article {
+    background-color: white;
+}
+
+/* App - icônes */
+i {
+    font-size: 1em;
+}
+
+/* App - Picture-img */
+.picture {
+    border-radius: 50%;
+}
+
+img {
+    object-fit: cover;
+}
+
+/* App - Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid rgb(180, 180, 180);
+    height: 50px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+::placeholder {
+    padding-left: 5px;
+    font-size: 1.2em
+}
+
+textarea {
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* App - Button */
+.button:hover {
+    filter: brightness(1.1);
+}
+
+.button {
+    height: 50px;
+    width: 50%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: 800;
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-button {
+    background-color: rgba(42, 185, 42, 0.7);
+}
+
+.red-button {
+    background-color: rgb(233, 80, 80);
+}
+
+.black-button {
+    background-color: rgb(63, 58, 58);
+
+}
+
+.invisible-button {
+    border: none;
+    background-color: white;
+    font-size: 1em;
+}
+
+
+/* Components / Footer */
+footer {
+    background-color: rgb(233, 80, 80);
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+
+    /* Général - button */
+    .button {
+        font-size: 0.8em;
+    }
+}
